@@ -147,6 +147,7 @@ a[id='another-76980']
 a[id='another-76980'][class='card-link']
 a#another-76980.card-link <!-- indicates who has class & id both -->
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Test Automation
 **pom.xml**
