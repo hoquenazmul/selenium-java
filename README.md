@@ -173,6 +173,28 @@ a#another-76980.card-link <!-- indicates who has class & id both -->
 				</suiteXmlFiles>
 			</configuration>
 		</plugin>
+		<plugin>
+			<groupId>net.masterthought</groupId>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>5.0.0 </version>
+			<executions>
+				<execution>
+					<id>execution</id>
+					<phase>verify</phase>
+					<goals>
+						<goal>generate</goal>
+					</goals>
+					<configuration>
+						<projectName>ExecutionResult</projectName>
+						<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+						<inputDirectory>${project.build.directory}</inputDirectory>
+						<jsonFiles>
+							<param>**/*.json</param>
+						</jsonFiles>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
 	</plugins>
 </build>
 <dependencies>
